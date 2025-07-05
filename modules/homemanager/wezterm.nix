@@ -12,6 +12,6 @@ in
     environment.systemPackages = with pkgs; [ wezterm ];
 
     # Optional: Set as default terminal in systemd (for apps that rely on $TERM_PROGRAM)
-    environment.variables.TERM_PROGRAM = "wezterm";
+    # environment.variables.TERM_PROGRAM = "wezterm";
   };
 }
