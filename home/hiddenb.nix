@@ -25,6 +25,7 @@
     uv
     curl
     wget
+    alejandra
     nerd-fonts.caskaydia-mono
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
