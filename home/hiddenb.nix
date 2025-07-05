@@ -11,6 +11,7 @@
     ../modules/homemanager/swww.nix
     ../modules/homemanager/neovim.nix
     ../modules/homemanager/git.nix
+    ../modules/homemanager/wezterm.nix
   ];
 
   home.username = "hiddenb";
@@ -38,6 +39,7 @@
   modules.homemanager.hyprpaper.enable = true;
   modules.homemanager.swww.enable = true;
   modules.homemanager.neovim.enable = true;
+  modules.homemanager.wezterm.enable = true;
 
   modules.homemanager.git = {
     enable = true;
