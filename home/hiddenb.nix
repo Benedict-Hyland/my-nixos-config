@@ -67,5 +67,9 @@
     platformTheme = "gtk";
   };
 
+  programs.bash.shellAliases = {
+    nixos-rebuild = "~/System/scripts/nixos-rebuild.sh";
+  };
+
   home.stateVersion = "25.05";
 }
