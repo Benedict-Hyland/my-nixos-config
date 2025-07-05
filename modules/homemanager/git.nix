@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.modules.git;
+  cfg = config.modules.homemanager.git;
 in {
-  options.modules.git = {
+  options.modules.homemanager.git = {
     enable = lib.mkEnableOption "Git version control and GitHub integration";
 
     userName = lib.mkOption {

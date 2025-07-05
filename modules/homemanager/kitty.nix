@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.modules.kitty;
+  cfg = config.modules.homemanager.kitty;
 in {
-  options.modules.kitty = {
+  options.modules.homemanager.kitty = {
     enable = lib.mkEnableOption "Kitty terminal emulator";
   };
 

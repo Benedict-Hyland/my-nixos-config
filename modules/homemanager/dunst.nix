@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.modules.dunst;
+  cfg = config.modules.homemanager.dunst;
 in {
-  options.modules.dunst = {
+  options.modules.homemanager.dunst = {
     enable = lib.mkEnableOption "Dunst notification daemon";
   };
 

@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.modules.firefox;
+  cfg = config.modules.homemanager.firefox;
 in {
-  options.modules.firefox = {
+  options.modules.homemanager.firefox = {
     enable = lib.mkEnableOption "Firefox browser";
   };
 

@@ -2,15 +2,15 @@
 
 {
   imports = [
-    ../modules/waybar.nix
-    ../modules/kitty.nix
-    ../modules/rofi.nix
-    ../modules/dunst.nix
-    ../modules/firefox.nix
-    ../modules/hyprpaper.nix
-    ../modules/swww.nix
-    ../modules/neovim.nix
-    ../modules/git.nix
+    ../modules/homemanager/waybar.nix
+    ../modules/homemanager/kitty.nix
+    ../modules/homemanager/rofi.nix
+    ../modules/homemanager/dunst.nix
+    ../modules/homemanager/firefox.nix
+    ../modules/homemanager/hyprpaper.nix
+    ../modules/homemanager/swww.nix
+    ../modules/homemanager/neovim.nix
+    ../modules/homemanager/git.nix
   ];
 
   home.username = "hiddenb";
@@ -18,18 +18,23 @@
 
   home.packages = with pkgs; [
     tree
+    networkmanager
+    python313
+    uv
+    curl
+    wget
   ];
 
-  modules.waybar.enable = true;
-  modules.kitty.enable = true;
-  modules.rofi.enable = true;
-  modules.dunst.enable = true;
-  modules.firefox.enable = true;
-  modules.hyprpaper.enable = true;
-  modules.swww.enable = true;
-  modules.neovim.enable = true;
+  modules.homemanager.waybar.enable = true;
+  modules.homemanager.kitty.enable = true;
+  modules.homemanager.rofi.enable = true;
+  modules.homemanager.dunst.enable = true;
+  modules.homemanager.firefox.enable = true;
+  modules.homemanager.hyprpaper.enable = true;
+  modules.homemanager.swww.enable = true;
+  modules.homemanager.neovim.enable = true;
 
-  modules.git = {
+  modules.homemanager.git = {
     enable = true;
     userName = "Benedict-Hyland";
     userEmail = "benedicthyland@gmail.com";

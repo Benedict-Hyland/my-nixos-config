@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.modules.hyprpaper;
+  cfg = config.modules.homemanager.hyprpaper;
 in {
-  options.modules.hyprpaper = {
+  options.modules.homemanager.hyprpaper = {
     enable = lib.mkEnableOption "Hyprpaper for wallpaper management";
   };
 

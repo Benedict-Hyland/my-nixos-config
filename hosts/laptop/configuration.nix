@@ -13,12 +13,16 @@
     ../../modules/packages.nix
     ../../modules/services.nix
     ../../modules/nix-settings.nix
+    ../../modules/docker.nix
   ];
 
   # Packages to enable
   modules.networking.enable = true;
   modules.desktop.hyprland.enable = true;
   modules.desktop.gnome.enable = true;
+
+  modules.docker.enable = true;
+  modules.docker.username = "hiddenb";
 
   system.stateVersion = "25.05";
 }

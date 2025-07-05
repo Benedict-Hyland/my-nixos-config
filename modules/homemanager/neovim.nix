@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.modules.neovim;
+  cfg = config.modules.homemanager.neovim;
 in {
-  options.modules.neovim = {
+  options.modules.homemanager.neovim = {
     enable = lib.mkEnableOption "Neovim Editor";
   };
 

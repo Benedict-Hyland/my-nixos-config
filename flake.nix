@@ -16,6 +16,7 @@
       modules = [
         ./hosts/laptop/configuration.nix
         home-manager.nixosModules.home-manager
+        ./modules/docker.nix
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;

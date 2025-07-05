@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.modules.rofi;
+  cfg = config.modules.homemanager.rofi;
 in {
-  options.modules.rofi = {
+  options.modules.homemanager.rofi = {
     enable = lib.mkEnableOption "Rofi launcher";
   };
 

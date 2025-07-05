@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.modules.waybar;
+  cfg = config.modules.homemanager.waybar;
 in {
-  options.modules.waybar = {
+  options.modules.homemanager.waybar = {
     enable = lib.mkEnableOption "Waybar status bar for Hyprland and Wayland";
   };
 

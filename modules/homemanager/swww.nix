@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.modules.swww;
+  cfg = config.modules.homemanager.swww;
 in {
-  options.modules.swww = {
+  options.modules.homemanager.swww = {
     enable = lib.mkEnableOption "Swww wallpaper daemon for Wayland";
   };
 
