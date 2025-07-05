@@ -15,6 +15,7 @@
 
   home.username = "hiddenb";
   home.homeDirectory = "/home/hiddenb";
+  fonts.fontconfig.enable = true;
 
   home.packages = with pkgs; [
     tree
@@ -23,6 +24,7 @@
     uv
     curl
     wget
+    (nerdfonts.override { fonts = [ "CaskaydiaMono", "JetBrainsMono", "FiraCode", "Hack" ]; })
   ];
 
   modules.homemanager.waybar.enable = true;
@@ -47,6 +49,16 @@
   services.gpg-agent = {
     enable = true;
     pinentryPackage = pkgs.pinentry-tty;
+  };
+
+  gtk = {
+    enable = true;
+    font.name = "CaskaydiaMono Nerd Font";
+  };
+
+  qt = {
+    enable = true;
+    platformTheme = "gtk";
   };
 
   home.stateVersion = "25.05";
