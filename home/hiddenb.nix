@@ -73,7 +73,7 @@
     nixos-build = "~/System/scripts/nixos-build.sh";
   };
   home.sessionPath = [ "$HOME/.local/bin" ];
-  home.file.".local/bin/nixos-build".source = ./scripts/nixos-build.sh;
+  home.file.".local/bin/nixos-build".source = ~/System/scripts/nixos-build.sh;
 
 
   home.stateVersion = "25.05";
