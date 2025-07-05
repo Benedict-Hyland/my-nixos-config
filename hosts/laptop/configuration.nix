@@ -16,6 +16,10 @@
     ../../modules/docker.nix
   ];
 
+  environment.systemPackages = with pkgs; [
+    gcc
+  ];
+
   # Packages to enable
   modules.networking.enable = true;
   modules.desktop.hyprland.enable = true;

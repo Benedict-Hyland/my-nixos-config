@@ -19,6 +19,7 @@
   fonts.fontconfig.enable = true;
 
   home.packages = with pkgs; [
+    home-manager
     tree
     networkmanager
     python313
@@ -69,8 +70,11 @@
   };
 
   programs.bash.shellAliases = {
-    nixos-build = "~/System/scripts/nixos-rebuild.sh";
+    nixos-build = "~/System/scripts/nixos-build.sh";
   };
+  home.sessionPath = [ "$HOME/.local/bin" ];
+  home.file.".local/bin/nixos-build".source = ./scripts/nixos-build.sh;
+
 
   home.stateVersion = "25.05";
 }
