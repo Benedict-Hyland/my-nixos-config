@@ -26,6 +26,7 @@
     curl
     wget
     alejandra
+    bat
     nerd-fonts.caskaydia-mono
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
@@ -54,7 +55,7 @@
   programs.gpg.enable = true;
   services.gpg-agent = {
     enable = true;
-    pinentryPackage = pkgs.pinentry-tty;
+    pinentry.package = pkgs.pinentry-tty;
   };
 
   gtk = {
@@ -64,11 +65,11 @@
 
   qt = {
     enable = true;
-    platformTheme = "gtk";
+    platformTheme.name = "gtk";
   };
 
   programs.bash.shellAliases = {
-    nixos-rebuild = "~/System/scripts/nixos-rebuild.sh";
+    nixos-build = "~/System/scripts/nixos-rebuild.sh";
   };
 
   home.stateVersion = "25.05";
