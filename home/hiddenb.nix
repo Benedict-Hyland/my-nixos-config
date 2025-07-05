@@ -24,7 +24,7 @@
     uv
     curl
     wget
-    (nerdfonts.override { fonts = [ "CaskaydiaMono", "JetBrainsMono", "FiraCode", "Hack" ]; })
+    (nerdfonts.override { fonts = [ "CaskaydiaMono"  "JetBrainsMono"  "FiraCode"  "Hack" ]; })
   ];
 
   modules.homemanager.waybar.enable = true;
