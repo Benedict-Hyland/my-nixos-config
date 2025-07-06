@@ -30,6 +30,8 @@
     bat
     go
     ripgrep
+    vscode
+    windsurf
     nerd-fonts.caskaydia-mono
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
