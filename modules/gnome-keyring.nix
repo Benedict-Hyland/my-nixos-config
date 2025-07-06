@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.modules.homemanager.gnome-keyring;
+  cfg = config.modules.gnome-keyring;
 in {
-  options.modules.homemanager.gnome-keyring.enable =
+  options.modules.gnome-keyring.enable =
     lib.mkEnableOption "Enable GNOME Keyring for secrets management";
 
   config = lib.mkIf cfg.enable {

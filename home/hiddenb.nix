@@ -33,6 +33,7 @@
     ripgrep
     vscode
     windsurf
+    libsecret
     nerd-fonts.caskaydia-mono
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
