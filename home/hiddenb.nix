@@ -34,6 +34,7 @@
     vscode
     windsurf
     libsecret
+    seahorse
     nerd-fonts.caskaydia-mono
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code

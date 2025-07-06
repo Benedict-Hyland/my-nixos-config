@@ -1,0 +1,26 @@
+{ config, lib, pkgs, ... }:
+
+let
+  cfg = config.modules.homemanager.vscode;
+in {
+  options.modules.homemanager.vscode.enable = lib.mkEnableOption "Enable VSCode and grape theme setup";
+
+  config = lib.mkIf cfg.enable {
+    programs.vscode = {
+      enable = true;
+
+      extensions = with pkgs.vscode-extensions; [
+        zhuangtongfa.material-theme
+        pkief.material-icon-theme
+      ];
+
+      userSettings = {
+        "workbench.colorTheme" = "Material Theme Grapes";
+        "workbench.iconTheme" = "material-icon-theme";
+      };
+    };
+
+    home.file.".config/Code/User/themes/grape-color-theme.json".source =
+      ./themes/grape-color-theme.json; # adjust path as needed
+  };
+}
