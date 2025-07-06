@@ -28,6 +28,8 @@
     wget
     alejandra
     bat
+    go
+    ripgrep
     nerd-fonts.caskaydia-mono
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
