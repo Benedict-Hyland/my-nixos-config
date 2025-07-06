@@ -35,6 +35,7 @@
     windsurf
     libsecret
     seahorse
+    cronie
     nerd-fonts.caskaydia-mono
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
