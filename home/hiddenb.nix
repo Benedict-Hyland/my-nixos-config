@@ -12,6 +12,7 @@
     ../modules/homemanager/neovim.nix
     ../modules/homemanager/git.nix
     ../modules/homemanager/wezterm.nix
+    ../modules/gnome-keyring.nix
   ];
 
   home.username = "hiddenb";
@@ -47,6 +48,7 @@
   modules.homemanager.swww.enable = true;
   modules.homemanager.neovim.enable = true;
   modules.homemanager.wezterm.enable = true;
+  modules.gnome-keyring.enable = true;
 
   modules.homemanager.git = {
     enable = true;
