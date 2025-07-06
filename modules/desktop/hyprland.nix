@@ -12,8 +12,7 @@ in {
   config = mkIf cfg.enable {
     # Enable the Wayland display server and Hyprland
     services.xserver.enable = true;
-    services.displayManager.sddm.enable = true;
-
+    
     programs.hyprland = {
       enable = true;
       xwayland.enable = true;
