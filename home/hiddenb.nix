@@ -33,10 +33,12 @@
     ripgrep
     vscode
     windsurf
+    code-cursor
     libsecret
     seahorse
     cronie
     gcc
+    volta
     nerd-fonts.caskaydia-mono
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
